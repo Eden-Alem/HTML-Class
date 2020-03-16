@@ -1,0 +1,45 @@
+.tttboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    min-height: 100vh;
+    
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+}
+
+.ttt {
+    padding: 5%;
+    border: 1px solid black;
+    flex: 1 20%;  
+}
+
+.board-1,
+.board-2,
+.board-3 {
+    border-top: none;
+}
+
+.board-1,
+.board-4,
+.board-7 {
+    border-left: none;
+}
+
+.board-3,
+.board-6,
+.board-9 {
+    border-right: none;
+}
+
+.board-7,
+.board-8,
+.board-9 {
+    border-bottom: none;
+}
