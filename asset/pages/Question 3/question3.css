@@ -1,0 +1,66 @@
+.flags {    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flag {
+    border: .5px solid lightgray;
+    margin: 1%;
+    height: 150px;
+    width: 200px;
+}
+
+.belgium {
+	background: linear-gradient(to right, #222 33%, yellow 33%, yellow 66%, red 66%);
+}
+
+.netherlands {
+    background: linear-gradient(to bottom, #AE1C28 33%, white 33%, white 66%, #21468B 66%);
+}
+
+.denmark {
+    background: linear-gradient(to right, transparent 26%, white 26%, white 33%, transparent 33%), linear-gradient(to bottom, #e51400 44%, white 44%, white 56%, #e51400 56%);
+}
+
+.germany {
+    background: linear-gradient(to bottom, black 33%, #DD0000 33%, #DD0000 66%, #FFCE00 66%); 
+}
+
+.france {
+    background: linear-gradient(to right, #002395 33%, white 33%, white 66%, #ED2939 66%); 
+}
+
+.finland {
+    background: linear-gradient(to bottom, transparent 35%, #003580 35%, #003580 60%, transparent 60%), linear-gradient(to right, transparent 30%, #003580 30%, #003480 45%, transparent 45%), white;
+}
+
+.madagascar {
+    background: linear-gradient(to right, white 30%, transparent 30%), linear-gradient(to bottom, #FC3D32 50%, #007E3A 50%); 
+}
+
+.japan {
+    background: radial-gradient(100px at 50% 50%, #BC002D 0, #BC002D 35%, transparent 30%, transparent 100%), white; 
+}
+
+
+.hungary {
+    background: linear-gradient(to bottom, #CD2A3E 33%, white 33%, white 66%, #436F4D 66%); 
+}
+
+.thailand {
+    background: linear-gradient(to bottom, #ED1C24 15%, white 15%, white 30%, #241D4F 30%, #241D4F 70%, white 70%, white 85%, #ED1C24 85%); 
+}
+
+
+.italy {
+    background: linear-gradient(to right, #009246 33%, white 33%, white 66%, #CE2B37 66%);
+}
+
+.russia {    
+    background: linear-gradient(to bottom, white 33%, #0039A6 33%, #0039A6 66%, #D52B1E 66%); 
+}
+
+
+
+
+
