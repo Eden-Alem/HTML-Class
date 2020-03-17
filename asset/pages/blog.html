@@ -3,77 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eden A. / Blog</title>
-    <link rel="stylesheet" href="./asset/css/style.css">
-    <!-- <style>
-        p{
-            color:crimson;
-        }
-    </style> -->
+    <title>Best City Guide</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/5213943ae4b088f3b6732231/1435095140023-J536ER436T3AEBA4HG5O/ke17ZwdGBToddI8pDm48kNiEM88mrzHRsd1mQ3bxVct7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0s0XaMNjCqAzRibjnE_wBlkZ2axuMlPfqFLWy-3Tjp4nKScCHg1XF4aLsQJlo6oYbA/E-Circle-Logo.jpg">
+
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="gallery.html">Gallery</a></li>            
-        </ul>
-    </nav>
-</header>  
-    <div id="content">
+    <header class="main-header">
+        <div class="container clearfix">
+            <h1 class="name"><a href="index.html">Eden Alem</a></h1>
+            <ul class="main-nav clearfix">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="mywork.html">My Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="main-content clearfix">
         <section>
-            <p class="title">My first post</p>
+            <p class="title">Use of relative size in styling an element</p>
             <article>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam ducimus magni alias, nobis corporis, inventore voluptate quasi officia eius mollitia ullam! Veniam, provident!
+                    It does matter in the aspect of responsiveness using relative sizes for elements. As their name indicates these size units work relatively to the parent element and root element for em and rem units respectively. In using percentages which are more concerned with the viewport; decreasing the browsers width on desktop, results in scrollable content horizontally and vertically rather than accordingly adjusting to the new browser width.    
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam ducimus magni alias, nobis corporis, inventore voluptate quasi officia eius mollitia ullam! Veniam, provident!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam ducimus magni alias, nobis corporis, inventore voluptate quasi officia eius mollitia ullam! Veniam, provident!
+                    Compounding is a term found in using ems; 
+                    <img width="300" height="400" src="../image/answer.JPG" alt="Compound description">
+                    Considering the above html and css in the image the resulting output might seem a bit odd. In the above illustration, it was considered that the root element had a 10px font-sizing. And thus the span element's font size of 1.6em has a relativity concept in both the inner and outer span element. The outer text displayed in the outer span element has a size of 16px; 1.6 x 10 = 16px. And the inner span element's text is of 25.6px; this happened because the inner span element's font-size is 1.6em which is relative to its outer span element's font-size of 1.6em, which is in turn relative to its parent's font size of 10px declared. This certain problem that occurs in using the ems is known as compounding as mentioned earlier and is why rem values where invented in order for elements to stay relative to the root html element not parent element. And thus in assigning values for elements using the rem is more adviced to decrease incompliances and to be effective in issuing changes in the element's font size by changing the root element's size declaration. As a reference for this blog post and in further description please visit the website: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank"> https://developer.mozilla.org/en-US/docs/Web/CSS/font-size   </a> 
                 </p>
             </article>
-            <p class="date">March 10, 2020: 4:00am</p>
+            <p class="date">March 17, 2020: 2:10PM</p>
         </section>
 
         <section>
-            <p class="title">My second post</p>
+            <p class="title">Browser interpretation in changing the default browser font size to 200px.</p>
             <article>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam ducimus magni alias, nobis corporis, inventore voluptate quasi officia eius mollitia ullam! Veniam, provident!
+                    By default the browser has a font size of 16px if any other value is not declared else where through out the html. In changing this value to 200px; has an effect on relative units such as ems and rems. As their name indicates there is a relativity context on the parent element and html(root) element respectively. Also in considering percentage values by the default browser's 16px value it holds that 16px = 100% so in changing the font size value to 200px results in 200px = 1250% thus increasing the font size 12.5 times the default size. 
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam ducimus magni alias, nobis corporis, inventore voluptate quasi officia eius mollitia ullam! Veniam, provident!
+                    By the browsers default interpretation 1em = 16px; if the body element is set to have a 200px value of font size then it will hold that 1em = 200px; not only the body element but if thus the html(root) element is set with the exact value the browser interprets it in the same way.    
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam ducimus magni alias, nobis corporis, inventore voluptate quasi officia eius mollitia ullam! Veniam, provident!
+                    When it comes to rem values they are set relatively as the root elements font size thus changing the body element's font size to 200px brings no change on the interpretation of the browser as in 1rem = 16px as long as the root(html) element is not specified by another value declaration thus considering the default of 16px. A change is detected in rem values when the root(html) element has a change in value; considering 200px as its font size the resulting interpretation of the browser would be 1rem = 200px.
+As a reference for this post and in further description of the browsers interpretation of value changes please refer this site: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/font-size </a> 
                 </p>
             </article>
-            <p class="date">March 10, 2020: 4:00am</p>
+            <p class="date">March 17, 2020: 2:45PM</p>
         </section>
-
-        <section>
-            <p class="title">My third post</p>
-            <article>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam ducimus magni alias, nobis corporis, inventore voluptate quasi officia eius mollitia ullam! Veniam, provident!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam ducimus magni alias, nobis corporis, inventore voluptate quasi officia eius mollitia ullam! Veniam, provident!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam ducimus magni alias, nobis corporis, inventore voluptate quasi officia eius mollitia ullam! Veniam, provident!
-                </p>
-            </article>
-            <p class="date">March 10, 2020: 4:00am</p>
-        </section>
-
 
     </div>
- 
-
-
+    
+    <footer class="main-footer"> 
+        <span>&copy; Eden Alem 2020</span>
+    </footer>
+    
 </body>
 </html>
