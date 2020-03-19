@@ -175,3 +175,100 @@ form textarea {
     margin-bottom: 8%;
     text-transform: uppercase;
 }
+
+@media (min-width: 769px) {
+    body {
+        padding-top: 100px;
+        margin-top: 20px;
+        min-height: calc(100vh - 89.33px);
+    }
+
+    .main-header {
+        position: fixed;
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(0,0,0,.4);
+        width: 100%; 
+        top: 0;   
+        z-index: 1000;   
+    }
+
+    .container,
+    .main-nav {
+        display: flex;
+    }
+
+    .container {        
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    .main-nav li {
+        padding: .5em;
+    }
+
+    .container,
+    .main-content {
+        width: 90%;
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+    
+    .middle {
+        float: left;
+    }
+
+    .col {
+        float: left;
+        padding: 1.5em;
+    }
+
+    .primary {
+        width: 40%;
+    }
+
+    .secondary {
+        width: 60%;
+    }
+
+    .collection-header {
+        text-align: center;
+    }
+
+
+    .collection-images figure {
+        float: left;
+        margin: 2%;
+        width: 40%;
+        font-size: 14px;
+        font-style: italic;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; 
+    }
+
+    
+    
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+}
+
+@media (min-width:1050px) {  
+    body {
+        padding-top: 60px;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .primary {
+        width: 30%;
+    }
+
+    .secondary {
+        width: 40%;
+    }
+}
