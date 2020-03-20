@@ -271,4 +271,18 @@ form textarea {
     .secondary {
         width: 40%;
     }
+
+    .teritiary {
+        width: 30%;
+    }
+
+    .main-nav li {
+        padding: .5em;
+        margin-top: 13px;
+    }
+
+    .collection-images figure {
+        margin: 1%;
+        width: 30%;
+    }
 }
